@@ -54,7 +54,7 @@ python mastermind.py
 The program first prompts the player to enter a name:
 Once entered, the player should see a screen like this
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/welcome.png]
+![start] (/images/welcome.png)
 
 Once you choose the complexity level, it lets the player enter their “guess”.
 
