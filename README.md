@@ -54,31 +54,31 @@ python mastermind.py
 The program first prompts the player to enter a name:
 Once entered, the player should see a screen like this
 
-![welcome] (./images/welcome.png?raw=true)
+![welcome](./images/welcome.png?raw=true)
 
 Once you choose the complexity level, it lets the player enter their “guess”.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/start.png]
+![start](./images/start.png?raw=true)
 
 As you play, the player will be able to see their previous guesses along with the feedback.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/feedback1.png]
+![feedback](./images/feedback1.png?raw=true)
 
 For the last 3 guesses, you will receive a warning with the number of attempts left to guess the number.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/warning.png]
+![warning](./images/warning.png?raw=true)
 
 After the player exhausts all the 10 attempts, the player will be able to see all his 10 guesses, the computer’s feedback and the random number.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/feedback2.png]
+![feedback](./images/feedback2.png?raw=true)
 
 If the player guesses the number correctly, the player will still be able to see all his 10 guesses, the computer’s feedback.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/feedback3.png]
+![feedback](./images/feedback3.png?raw=true)
 
 At the end of the game, a scoreboard will be shown for that player, with the complexity level, result and number of attempts of each game played.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/result.png]
+![result](./images/result.png?raw=true)
 
 ### Extension
 - Added functionality for the player to set complexity level of the game
