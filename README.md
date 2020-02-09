@@ -54,7 +54,7 @@ python mastermind.py
 The program first prompts the player to enter a name:
 Once entered, the player should see a screen like this
 
-![welcome] (images/welcome.png)
+![welcome] (./images/welcome.png?raw=true "Welcome Screen")
 
 Once you choose the complexity level, it lets the player enter their “guess”.
 
