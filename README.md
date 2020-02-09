@@ -1,89 +1,125 @@
+This is a command line MasterMind game created by Sasikala Balaraman for LinkedIn Reach program
+
 # MasterMind game
 
-Mastermind is a classic board game for two players, a code-maker and a code-breaker. Here, the computer is the code-maker and the user/player will be the code-breaker. 
+## Introduction
 
-Computer will generate a random number depending on the difficulty level that the player chooses.
-- If the player inputs ‘1’ when prompted, then the program generates a random 3 digit number and the player have to guess that 3 digit number (Easy)
-- If the player inputs ‘2’, then the program generates a random 4 digit number and the player have to guess that 4 digit number (Normal)
-- If the player inputs ‘3’, then the program generates a random 5 digit number and the player have to guess that 5 digit number (Hard)
+Mastermind is a classic board game for two players, a code-maker and a code-breaker. Here, the application is the code-maker and the user/player will be the code-breaker. 
 
-The program uses random generator API to generate random numbers. This API takes number of digits as one of the inputs which is set by the program based on the difficulty level before the API call.
+The application will generate a random number depending on the difficulty level that the player chooses.
+- Level 1 - Easy: When prompted, player inputs ‘1’ and the application generates a 3 digit random number
+- Level 2 - Normal: When prompted, player inputs ‘2’ and the application generates a 4 digit random number
+- Level 3 - Hard: When prompted, player inputs ‘3’ and the application generates a 5 digit random number
 
-The computer also gives feedback after every guess that the player makes. It gives feedback on how many digits matches and how many digits and position matches. With each guess the player makes, he/she can use those feedback as clues and get closer to the random number.
+The application uses a random generator [API](https://www.random.org/clients/http/api/) to generate random numbers. This API takes number of digits as one of the inputs and it will be decided by the application based on the difficulty level chosen by the player.
 
-The player gets 10 attempts to crack the program generated random number.
+The application also gives feedback after every guess that the player makes. It gives feedback on 
+- the number of matching digits and 
+- the number of matching digits and the matching position
 
-At the end of the game, the program will display a scoreboard, with details on how many games played, its complexity level, the result of the game and the number of attempts of that particular player.
+With each guess the player makes, he/she can use the feedback as clues and use it to guess the random number.
+
+The player gets 10 attempts to guess the random number.
+
+At the end of the game, the application will display a scoreboard, with details on number of games played, its complexity level, the result of the game and the number of attempts.
 
 ## Getting Started
 
-Please follow these instructions to get the project running on your local machine.
+Please follow these instructions to run the application on your local machine.
 
-### Prerequisites
+## Requirements
 
-You will need to install the following:
+This is a Python based application and it requires the following libraries:
 ```
 - Python 3.7.4
 
-- Python library - requests
+- Python library - "requests"
 	sudo pip3.7 install --upgrade pip
 	sudo pip3 install requests
 
-- Python library - PrettyTable
+- Python library - "PrettyTable"
 	sudo pip3 install PrettyTable
 ```
 
-### Installation
+## Project installation
 
-Grab a copy of the program by entering the following into your terminal and cd into the repository.
+Clone the repository by running tbe below command from your terminal
 
 ```
 git clone https://github.com/bsasikal/reach-mastermind.git
 ```
 
-Once you have finished installing everything, you are ready to run the game.
-
-#### How to run the game
+## How to Run
 	
-Move back to the root directory of the repository and execute
+Execute the following command to run the application.
 
 ```
-python mastermind.py
+cd reach-mastermind/src && python master_mind.py
 ```
 
-The program first prompts the player to enter a name:
-Once entered, the player should see a screen like this
+The application first prompts for you to enter your name:
+
+Once entered, you should see a screen like below
 
 ![welcome](./images/welcome.png?raw=true)
 
-Once you choose the complexity level, it lets the player enter their “guess”.
+After you choose the complexity level, the application lets you to enter your “guess”. You will get 10 attempts to guess the number.
 
 ![start](./images/start.png?raw=true)
 
-As you play, the player will be able to see their previous guesses along with the feedback.
+As you play, you will be able to see the previous guesses along with the feedback.
 
 ![feedback](./images/feedback1.png?raw=true)
 
-For the last 3 guesses, you will receive a warning with the number of attempts left to guess the number.
+For the last 3 guesses, you will receive a warning with the number of remaining attempts to guess the number.
 
 ![warning](./images/warning.png?raw=true)
 
-After the player exhausts all the 10 attempts, the player will be able to see all his 10 guesses, the computer’s feedback and the random number.
+After you exhaust all the attempts, you will be able to see all 10 guesses, the feedback and the random number.
 
 ![feedback](./images/feedback2.png?raw=true)
 
-If the player guesses the number correctly, the player will still be able to see all his 10 guesses, the computer’s feedback.
+If you guess the number correctly, you will still be able to see all 10 guesses and the feedback.
 
 ![feedback](./images/feedback3.png?raw=true)
 
-At the end of the game, a scoreboard will be shown for that player, with the complexity level, result and number of attempts of each game played.
+At the end of the game, a scoreboard will be shown with the complexity level, final result and the number of attempts for each game played.
 
 ![result](./images/result.png?raw=true)
 
-### Extension
-- Added functionality for the player to set complexity level of the game
-- Scoreboard at the end of the game
+## Extension
+In addition to the MVP asked, I have implemented the following additional features in the game.
 
+- Player can choose the complexity level (1-easy or 2-normal or 3-hard) of the game
+- Display scoreboard at the end of the game
+
+## Running the tests
+Unit test is located in reach-mastermind/src in the file mastermind_test.py
+
+To run the tests, execute the following command from the $PROJECT_HOME/src directory
+
+```
+python -m unittest mastermind_test.py -b
+```
+
+## Project Enhancements
+
+#### Functionality:
+- Add a timer to track the time spent for each guess attempts and the total time spent to complete the game
+- Rank the success/failure attempts 
+- Dynamically change the difficulty of the problem based on the complexity level
+- Provide a leaderboard (handle multiple user sessions and store the results in a database)
+- Enhance the usability by adding a rich user interface (web/mobile client)
+
+#### Testing
+- Add additional mock test to increase the code coverage
+
+#### Packaging:
+- Update installation scripts to use Python setup scripts setup.py & requirements.txt
+
+
+## Author
+Created by Sasikala Balaraman
 
 
 
