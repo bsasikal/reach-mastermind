@@ -54,31 +54,31 @@ python mastermind.py
 The program first prompts the player to enter a name:
 Once entered, the player should see a screen like this
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/master/images/welcome.png]
+![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/welcome.png]
 
 Once you choose the complexity level, it lets the player enter their “guess”.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/master/images/start.png]
+![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/start.png]
 
 As you play, the player will be able to see their previous guesses along with the feedback.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/master/images/feedback1.png]
+![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/feedback1.png]
 
 For the last 3 guesses, you will receive a warning with the number of attempts left to guess the number.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/master/images/warning.png]
+![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/warning.png]
 
 After the player exhausts all the 10 attempts, the player will be able to see all his 10 guesses, the computer’s feedback and the random number.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/master/images/feedback2.png]
+![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/feedback2.png]
 
 If the player guesses the number correctly, the player will still be able to see all his 10 guesses, the computer’s feedback.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/master/images/feedback3.png]
+![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/feedback3.png]
 
 At the end of the game, a scoreboard will be shown for that player, with the complexity level, result and number of attempts of each game played.
 
-![alt text] [https://github.com/bsasikal/reach-mastermind/master/images/result.png]
+![alt text] [https://github.com/bsasikal/reach-mastermind/tree/master/images/result.png]
 
 ### Extension
 - Added functionality for the player to set complexity level of the game
