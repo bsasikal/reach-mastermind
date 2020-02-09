@@ -54,7 +54,7 @@ git clone https://github.com/bsasikal/reach-mastermind.git
 Execute the following command to run the application.
 
 ```
-cd reach-mastermind/src && python master_mind.py
+cd reach-mastermind/src && python mastermind.py
 ```
 
 The application first prompts for you to enter your name:
